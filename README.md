@@ -1,63 +1,54 @@
-# Keep Agent Benchmarks Honest About Work
+# Designing Benchmarks for Knowledge Work
 
-This repository contains the release materials for the position paper
-**Keep Agent Benchmarks Honest About Work**.
+This repository contains the paper, companion atlas, and submission packets for
+**Designing Benchmarks for Knowledge Work**.
 
-The paper argues that knowledge-work agent benchmarks should state what
-work claim their scores can support. It proposes a three-step reporting
-approach: define the work activity under evaluation, specify the tested
-setting, and score the appropriate work product.
+The paper argues that knowledge-work agent benchmarks should make four choices
+explicit: the represented work activity, the tested setting, the required work
+product, and the evaluated result. It derives an 18-activity inventory from
+O\*NET task statements and applies the representation to GDPval, OfficeQA Pro,
+and APEX-SWE.
 
-Paper link:
+Paper (arXiv v1; v2 source in this repo):
 
-An arXiv link will be added after posting.
+<https://arxiv.org/abs/2605.23262>
 
-Open the companion HTML page:
+Companion HTML atlas:
 
-[`index.html`](index.html)
+- Local: [`index.html`](index.html)
+- Public: <https://ningkko.github.io/knowledge-work-position/index.html>
 
-The HTML page gives an interactive view of the O*NET-derived
-work-activity taxonomy and the ESCO comparison used in the paper. It is a
-companion artifact for reading the position paper.
+## Repository layout
 
-## Paper Summary
+| Path | Contents |
+| --- | --- |
+| `arxiv/` | Named arXiv v2 LaTeX source (authors visible; `tmlr` preprint option) |
+| `tmlr/` | Anonymous TMLR-formatted LaTeX source |
+| `packets/` | Exact upload zips for arXiv replace and TMLR |
+| `src/` | Companion HTML figure assets |
+| `index.html` | Interactive O\*NET / ESCO atlas |
 
-Knowledge-work benchmarks often report performance on prompts, tasks, or
-environments, then their scores are used to support broader claims about
-workplace-facing capability. The paper argues that this inference is
-fragile unless the benchmark report identifies the work activity, the
-tested setting, and the scored work product.
+Do not link the named GitHub or arXiv pages from the TMLR OpenReview form.
+TMLR is double-blind; the `tmlr/` source stays anonymous.
 
-The paper uses three benchmark case analyses to demonstrate the approach:
-GDPval, OfficeQA Pro, and APEX-SWE. These cases show how different
-scoring designs support different claims. Occupational deliverables,
-grounded final answers, and executable software-state changes expose
-different parts of work and leave different gaps.
+## Work-activity reference
 
-## Work-Activity Reference
+The inventory is derived from [O\*NET](https://www.onetcenter.org/database.html)
+30.2 task statements in Job Zones 3–5. After screening, the reporting corpus
+contains 12,464 task statements. A stricter atlas subset contains 8,372
+statements.
 
-To help benchmark reports name the work being evaluated, the paper
-derives an 18-activity reference set from
-[O*NET](https://www.onetcenter.org/database.html) 30.2 task statements in
-Job Zones 3-5 and knowledge-work occupations. After screening, the
-reporting corpus contains 12,464 task statements. A stricter atlas subset
-contains 8,372 task statements.
-
-[ESCO](https://esco.ec.europa.eu/en) is used as an external legibility
-check. The ESCO check assigns 5,826 scoped skill and competence items to
-the same 18 labels or to a none-of-the-above category after the O*NET
-taxonomy is fixed.
-
-## Companion HTML
-
-The companion HTML page places the main taxonomy table and interactive
-atlas first, followed by result interpretation, O*NET and ESCO comparison
-results, implications, limitations, and method details.
-
-The atlas supports 3D and 2D views. Hovering over a point shows the source
-job, original task, normalized task label, work activity,
-work-activity cluster, and label color.
+[ESCO](https://esco.ec.europa.eu/en) is used as an external legibility check.
+The machine-readable 18-activity vocabulary and validation summary are in
+`arxiv/supplementary/` and `tmlr/supplementary/`.
 
 ## Citation
 
-Please cite the arXiv paper after posting.
+```bibtex
+@article{hua2026designing,
+  title={Designing Benchmarks for Knowledge Work},
+  author={Hua, Yining and Na, Hongbin and Ayubcha, Cyrus and Lian, Levi},
+  journal={arXiv preprint arXiv:2605.23262},
+  year={2026}
+}
+```
