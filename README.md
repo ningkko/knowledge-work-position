@@ -27,6 +27,7 @@ Companion HTML atlas:
 | `packets/` | Exact upload zips for arXiv replace and TMLR |
 | `src/` | Companion HTML figure assets |
 | `index.html` | Interactive O\*NET / ESCO atlas |
+| `archive/unsubmitted_rebuttal/` | Unique TMLR rebuttal from the older underscore checkout; not submitted |
 
 Do not link the named GitHub or arXiv pages from the TMLR OpenReview form.
 TMLR is double-blind; the `tmlr/` source stays anonymous.
