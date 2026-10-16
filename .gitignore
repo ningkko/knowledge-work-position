@@ -4,15 +4,3 @@
 .env.*
 __pycache__/
 *.pyc
-
-# Local LaTeX build artifacts (keep committed .bbl in paper source)
-*.aux
-*.blg
-*.fdb_latexmk
-*.fls
-*.log
-*.out
-*.synctex.gz
-*.toc
-*.pdf
-!packets/*.zip
