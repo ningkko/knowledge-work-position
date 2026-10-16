@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+data/raw/
+data/derived/embeddings/
+data/derived/esco/embeddings/
+*.npz
+*.parquet
+*cache*.jsonl

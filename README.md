@@ -27,3 +27,9 @@ used as an external legibility check.
   year={2026}
 }
 ```
+
+## Reproduction code
+
+The [reproduction/](reproduction/README.md) directory contains the Python and shell scripts for O*NET processing, taxonomy construction, ESCO analysis, benchmark coding, and figure generation. It also includes the curated taxonomy and small derived data tables.
+
+The research code was developed across several iterations. Some steps require an OpenAI API key and generated intermediate files; the end-to-end pipeline has not been independently rerun as part of this release. The public atlas and two CSV files above remain unchanged.
